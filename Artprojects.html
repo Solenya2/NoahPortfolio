@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
+  <script>
     Weglot.initialize({
-        api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
+      api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
     });
-</script>
+  </script>
 <head>
   <meta charset="UTF-8">
   <title>Art Page</title>
@@ -94,6 +94,13 @@
     #art img:hover, #design img:hover {
       transform: scale(1.05);
     }
+
+    /* Uniform image size */
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; /* Ensures image fills the area and maintains aspect ratio */
+    }
   </style>
 </head>
 <body>
@@ -151,7 +158,6 @@
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <p>
-            <!-- Introduce yourself here -->
             Hii my names noah and here you can find my favorite Art/3d projects ive made
         </div>
       </div>
@@ -166,23 +172,22 @@
       <div class="row">
         <!-- Art Item 1 -->
         <div class="col-md-4 mb-4">
-          <a href="apFake Energy drink" data-lightbox="art-gallery" data-title="Art Title 1">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\prniteble energy.png" class="img-fluid" alt="Art 1">
+          <a href="./Photos/pictures/prniteble energy.png" data-lightbox="art-gallery" data-title="Art Title 1">
+            <img src="./Photos/pictures/prniteble energy.png" class="img-fluid gallery-img" alt="Art 1">
           </a>
         </div>
         <!-- Art Item 2 -->
         <div class="col-md-4 mb-4">
-          <a href="Fake company car" data-lightbox="art-gallery" data-title="Art Title 2">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\printabrld car.png" class="img-fluid" alt="Art 2">
+          <a href="./Photos/pictures/printabrld car.png" data-lightbox="art-gallery" data-title="Art Title 2">
+            <img src="./Photos/pictures/printabrld car.png" class="img-fluid gallery-img" alt="Art 2">
           </a>
         </div>
         <!-- Art Item 3 -->
         <div class="col-md-4 mb-4">
-          <a href="Fakeapp" data-lightbox="art-gallery" data-title="Art Title 3">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\app store prntable.png" class="img-fluid" alt="Art 3">
+          <a href="./Photos/pictures/app store prntable.png" data-lightbox="art-gallery" data-title="Art Title 3">
+            <img src="./Photos/pictures/app store prntable.png" class="img-fluid gallery-img" alt="Art 3">
           </a>
         </div>
-        <!-- Add more art items as needed -->
       </div>
     </div>
   </section>
@@ -196,22 +201,21 @@
         <!-- Design Item 1 -->
         <div class="col-md-4 mb-4">
           <a href="axolothel" data-lightbox="design-gallery" data-title="Design Title 1">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\axolothel in a bulb.png" class="img-fluid" alt="Design 1">
+            <img src="../Photos/pictures/axolothel in a bulb.png" class="img-fluid gallery-img" alt="Design 1">
           </a>
         </div>
         <!-- Design Item 2 -->
         <div class="col-md-4 mb-4">
           <a href="bookthingy" data-lightbox="design-gallery" data-title="Design Title 2">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\book and grass stuff.png" class="img-fluid" alt="Design 2">
+            <img src="../Photos/pictures/book and grass stuff.png" class="img-fluid gallery-img" alt="Design 2">
           </a>
         </div>
         <!-- Design Item 3 -->
         <div class="col-md-4 mb-4">
           <a href="dablackpearltapped" data-lightbox="design-gallery" data-title="Design Title 3">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\boat in a cup.png" class="img-fluid" alt="Design 3">
+            <img src="../Photos/pictures/boat in a cup.png" class="img-fluid gallery-img" alt="Design 3">
           </a>
         </div>
-        <!-- Add more design items as needed -->
       </div>
     </div>
   </section>
@@ -225,26 +229,27 @@
         <!-- Project 1 -->
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\roomunity.jpg" class="card-img-top" alt="3D Project 1">
+            <img src="../Photos/pictures/roomdesignunity.jpg" class="card-img-top gallery-img" alt="3D Project 1">
             <div class="card-body">
               <h5 class="card-title">Room design</h5>
               <p class="card-text">A world i made in unity</p>
-              <a href="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\pictures\VR Room noah - NOAH ROOM - Windows, Mac, Linux - Unity 2022.3.20f1 _DX11_ 2024-06-03 09-23-29.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              <a href="../Photos/pictures/VR Room noah - NOAH ROOM - Windows, Mac, Linux - Unity 2022.3.20f1 _DX11_ 2024-06-03 09-23-29.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
             </div>
           </div>
         </div>
         <!-- Project 2 -->
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\aifollowunreal.jpg" class="card-img-top" alt="3D Project 2">
+            <img src="../Photos/pictures/aifollowpictuew.jpg" class="card-img-top gallery-img" alt="3D Project 1">
             <div class="card-body">
-              <h5 class="card-title">Unreal Engine 2</h5>
-              <p class="card-text">Ai that can follow and run after you</p>
-              <a href="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\unreal engine running ai .mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              <h5 class="card-title">Ai Enemy</h5>
+              <p class="card-text">An Ai program i made in unreal engine</p>
+              <a href="../Photos/pictures/unreal engine_running_ai.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
             </div>
           </div>
         </div>
-        <!-- Add more projects as needed -->
+          </div>
+        </div>
       </div>
     </div>
   </section>
