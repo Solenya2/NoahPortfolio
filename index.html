@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
-    });
-</script>
 <head>
+  <!-- Include Weglot JS for language translation -->
+  <script src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+    Weglot.initialize({
+      api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4' <!-- Your Weglot API key -->
+    });
+  </script>
+
+  <!-- Set character encoding and viewport for responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
+  <title>My Portfolio - Home</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Include Bootstrap CSS for styling -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
 
-  <!-- Bootstrap Icons -->
+  <!-- Include Bootstrap Icons for icon fonts -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS styles -->
   <style>
     /* General Styling */
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
       background-color: #f1f1f1;
-;
     }
 
     h1, h2, h3 {
       font-weight: bold;
     }
 
-    /* Navbar Styling */
-    .navbar {
-      background-color: #343a40;
-    }
-
-    .navbar-brand, .nav-link {
-      color: rgb(255, 255, 255) !important;
+    /* Navbar adjustments */
+    .navbar-brand {
+      font-weight: bold;
     }
 
     /* Hero Section */
     #hero {
       height: 100vh;
-      background: url('your-background-image.jpg') no-repeat center center/cover;
+      background: url('your-background-image.jpg') no-repeat center center/cover; /* Replace with your image */
       color: rgb(0, 0, 0);
       display: flex;
       justify-content: center;
@@ -115,34 +113,38 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">test</a>
+      <!-- Brand Name -->
+      <a class="navbar-brand" href="#">Noah Hereid</a>
+      <!-- Navbar Toggler for mobile view -->
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navbar Links -->
       <div
         class="collapse navbar-collapse justify-content-end"
         id="navbarNav"
       >
         <ul class="navbar-nav">
+          <!-- Navigation Links -->
           <li class="nav-item">
-            <a class="nav-link active" href="Portfolio.html">test</a>
+            <a class="nav-link active" href="index.html">Home</a> <!-- Active page -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Aboutmebetter.html">Abotesrt Me</a>
+            <a class="nav-link" href="Artprojects.html">Art</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="programingprojects.html">Projects</a>
+            <a class="nav-link" href="programingprojects.html">Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutmebetter.html">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ContactPage.html">Contact</a>
@@ -155,22 +157,24 @@
   <!-- Hero Section -->
   <section id="hero">
     <h1>Welcome to My Portfolio</h1>
-    <p>Here you can find some of my work and a lot of relavent information.</p>
+    <p>Here you can find some of my work and a lot of relevant information.</p>
+    <!-- Button to navigate to the projects section -->
     <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
   </section>
 
   <!-- About Section -->
   <section id="about" class="container">
     <div class="row align-items-center">
+      <!-- Image Column -->
       <div class="col-md-6">
-        <img src="./Photos/pictures/Noah.JPEG" alt="Noah">
+        <img src="../Photos/pictures/Noah.JPEG" alt="Noah"> <!-- Replace with your image path -->
       </div>
+      <!-- Text Column -->
       <div class="col-md-6">
         <h2>About Me</h2>
         <p>
-          Hi! My name is <strong>Noah Hereid</strong>, im a student in Haugaland vgs on my second year. this is my portfolio showcasing some relavant informtion like job experience, what im good at and my education.
+          Hi! My name is <strong>Noah Hereid</strong>, and I'm a student at Haugaland VGS in my second year. This is my portfolio showcasing some relevant information like job experience, my skills, and my education.
         </p>
-
       </div>
     </div>
   </section>
@@ -181,43 +185,58 @@
       <h2 class="text-center">My Projects</h2>
       <p class="text-center mb-5">Here are some of my recent works.</p>
       <div class="row">
-        <!-- Project 1 -->
+        <!-- Project 1: Programming -->
         <div class="col-md-4">
           <div class="card mb-4">
             <div class="card-body">
-              <h5 class="card-title">Programing</h5>
-              <p class="card-text">Some Programing projects i made in html, css, c++, java and others.</p>
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">Some programming projects I made in HTML, CSS, C++, Java, and others.</p>
               <a href="programingprojects.html" class="btn btn-primary">View Projects</a>
             </div>
           </div>
         </div>
-        <!-- Project 2 -->
+        <!-- Project 2: Art -->
         <div class="col-md-4">
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title">Art</h5>
-              <p class="card-text">Some art projects ive made.</p>
+              <p class="card-text">Some art projects I've made.</p>
               <a href="Artprojects.html" class="btn btn-primary">View Projects</a>
             </div>
           </div>
         </div>
+        <!-- You can add more project cards here if needed -->
+      </div>
+    </div>
   </section>
 
+  <!-- Music Player Section -->
+  <section id="music">
+    <div class="container text-center mt-5">
+      <h2>Enjoy Some Background Music</h2>
+      <!-- Audio Player -->
+      <audio controls autoplay loop>
+        <source src="./creative-technology-showreel-241274.mp3" type="audio/mpeg"> <!-- Replace with your audio file -->
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
 
- 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Noah Hereid. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/Solenya2?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; 2024 Noah Hereid. All rights reserved.</p>
+      <div class="social-icons">
+        <!-- Social Media Icons -->
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Solenya2?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and Icons -->
+  <!-- Include Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
