@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
-    });
-</script>
 <head>
+  <!-- Include Weglot JS for language translation -->
+  <script src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+    Weglot.initialize({
+      api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4' <!-- Your Weglot API key -->
+    });
+  </script>
+
+  <!-- Set character encoding and viewport for responsive design -->
   <meta charset="UTF-8">
-  <title>Programing</title>
+  <title>Programming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
+  <!-- Include Bootstrap CSS for styling -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
 
-  <!-- Font Awesome (for icons) -->
+  <!-- Include Font Awesome for icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -26,46 +29,44 @@
     referrerpolicy="no-referrer"
   />
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS styles -->
   <style>
-    /* Custom Styles */
-
     /* Adjust the hero section */
     #hero {
       color: white;
       text-shadow: 1px 1px 2px black;
       min-height: 100vh;
-      background-image: url('hero-bg.jpg');
+      background-image: url('hero-bg.jpg'); /* Background image for hero section */
       background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
     }
 
-    /* Smooth scrolling */
+    /* Smooth scrolling for anchor links */
     html {
       scroll-behavior: smooth;
     }
 
-    /* Navbar adjustments */
+    /* Make the navbar brand bold */
     .navbar-brand {
       font-weight: bold;
     }
 
-    /* Section headings */
+    /* Style for section headings */
     section h2 {
       margin-bottom: 1rem;
       font-weight: bold;
     }
 
-    /* Footer icons hover effect */
+    /* Footer icon hover effect */
     footer a {
       color: white;
       transition: color 0.2s;
     }
 
     footer a:hover {
-      color: #0d6efd; /* Bootstrap primary color */
+      color: #0d6efd; /* Bootstrap primary color on hover */
     }
 
     /* Project card hover effect */
@@ -89,7 +90,9 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
+      <!-- Website logo or brand name -->
       <a class="navbar-brand" href="#">Noah Hereid</a>
+      <!-- Navbar toggler for mobile view -->
       <button
         class="navbar-toggler"
         type="button"
@@ -98,11 +101,13 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navbar links -->
       <div
         class="collapse navbar-collapse justify-content-end"
         id="navbarNav"
       >
         <ul class="navbar-nav">
+          <!-- Navigation items -->
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
           </li>
@@ -110,10 +115,10 @@
             <a class="nav-link" href="Artprojects.html">Art</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="programingprojects.html">Programing</a>
+            <a class="nav-link" href="programingprojects.html">Programming</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Aboutmebetter.html">About me</a>
+            <a class="nav-link" href="Aboutmebetter.html">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ContactPage.html">Contact</a>
@@ -128,11 +133,11 @@
     <div class="container text-center text-white">
       <h1>Welcome to My Coding Portfolio</h1>
       <p class="lead">Showcasing My Projects in Python, C++, Java, and More</p>
+      <!-- Button to navigate to projects section -->
       <a href="#projects" class="btn btn-primary btn-lg mt-3">View Projects</a>
     </div>
   </section>
 
- 
   <!-- Projects Section -->
   <section id="projects" class="py-5 bg-light">
     <div class="container">
@@ -147,18 +152,20 @@
             <div class="card-body">
               <h5 class="card-title">Platformer</h5>
               <p class="card-text">
-                A playformer with, a player and enemys that can move, platforms, colecetbals and a victory screen 
+                A platformer game with a player, enemies that can move, platforms, collectibles, and a victory screen.
               </p>
+              <!-- Code snippet example -->
               <div class="code-snippet">
                 <pre><code># Sample Python Code
-                    # Check for collisions with platforms
-                    platform_top = check_collision(player_rect, platforms)
-                    if platform_top is not None:
-                        playerY = platform_top - player_height
-                        playerY_change = 0
-                        on_ground = True
-            
+# Check for collisions with platforms
+platform_top = check_collision(player_rect, platforms)
+if platform_top is not None:
+    playerY = platform_top - player_height
+    playerY_change = 0
+    on_ground = True
+</code></pre>
               </div>
+              <!-- Link to GitHub repository -->
               <a href="https://github.com/yourusername/project1" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>
             </div>
           </div>
@@ -167,18 +174,21 @@
         <div class="col-md-4 mb-4">
           <div class="card project-card h-100">
             <div class="card-body">
-              <h5 class="card-title">Project Title 2</h5>
+              <h5 class="card-title">C++ Project</h5>
               <p class="card-text">
-                Brief description of the project in C++.
+                A brief description of my C++ project.
               </p>
+              <!-- Code snippet example -->
               <div class="code-snippet">
                 <pre><code>// Sample C++ Code
 #include &lt;iostream&gt;
 int main() {
     std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
     return 0;
-}</code></pre>
+}
+</code></pre>
               </div>
+              <!-- Link to GitHub repository -->
               <a href="https://github.com/yourusername/project2" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>
             </div>
           </div>
@@ -187,21 +197,21 @@ int main() {
         <div class="col-md-4 mb-4">
           <div class="card project-card h-100">
             <div class="card-body">
-              <h5 class="card-title">website Portfolio</h5>
+              <h5 class="card-title">Website Portfolio</h5>
               <p class="card-text">
-                I made this project using mostly html, bootstrap and java.
+                I made this project using mostly HTML, Bootstrap, and JavaScript.
               </p>
+              <!-- Code snippet example -->
               <div class="code-snippet">
-                <pre><code>// Sample html Code
-
-    /* Project card hover effect */
-    .project-card:hover {
-      transform: translateY(-5px);
-      transition: transform 0.2s;
-    }
-
+                <pre><code>/* Sample CSS Code */
+/* Project card hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+}
 </code></pre>
               </div>
+              <!-- Link to GitHub repository -->
               <a href="https://github.com/yourusername/project3" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>
             </div>
           </div>
@@ -263,11 +273,10 @@ int main() {
       </p>
       <div class="row justify-content-center">
         <div class="col-md-6">
+          <!-- Contact form using Formspree -->
           <form action="https://formspree.io/f/your-form-id" method="POST">
             <div class="mb-3">
-              <label for="name" class="form-label"
-                >Name</label
-              >
+              <label for="name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -277,9 +286,7 @@ int main() {
               />
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label"
-                >Email Address</label
-              >
+              <label for="email" class="form-label">Email Address</label>
               <input
                 type="email"
                 class="form-control"
@@ -289,9 +296,7 @@ int main() {
               />
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label"
-                >Message</label
-              >
+              <label for="message" class="form-label">Message</label>
               <textarea
                 class="form-control"
                 id="message"
@@ -314,6 +319,7 @@ int main() {
     <div class="container text-center">
       <p>&copy; 2024 Noah Hereid. All Rights Reserved.</p>
       <div>
+        <!-- Social media links -->
         <a href="https://linkedin.com/in/yourprofile" class="text-white me-3">
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
@@ -327,7 +333,7 @@ int main() {
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Include Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
